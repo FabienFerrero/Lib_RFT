@@ -156,7 +156,7 @@ void loop() {
   digitalWrite(LED, LOW);
   delay(100);
 
-  lr11xx.scan_gnss_autonomous();
+  lr11xx.scan_gnss_autonomous(6);
   lr11xx.get_gnss_satelites(&nb_detected_satellites, detected_satellite_id_snr_doppler);
 
   Serial.println("#### GNSS SCAN RESULT ####");
